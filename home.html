@@ -8,23 +8,7 @@
 	<!--<link href="bootstrap4.4/css/bootstrap.min.css" rel="stylesheet">-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<style type="text/css">
-		table {
-		  font-family: arial, sans-serif;
-		  border-collapse: collapse;
-		  width: 100%;
-		}
-
-		td, th {
-		  border: 1px solid #dddddd;
-		  text-align: left;
-		  padding: 8px;
-		}
-
-		tr:nth-child(even) {
-		  background-color: #dddddd;
-		}
-	</style>
+	
 
 </head>
 <body>
@@ -36,23 +20,38 @@
 		<li><a href="parts/nested_columns.html">nested_columns</a></li>
 		<li><a href="parts/test_area.html">test_area</a></li>
 		<li><a href="parts/fixed_layout.html">Bootstrap Fixed Layout</a></li>
+		<li><a href="parts/tables.html">Tables</a></li>
 	</ul>
 	<hr>
 
 	<div class="container-fluid">
-	<table>
-		<tr>
-			<th>Este es el tamaño del container <bold>100%</bold></th>
-		</tr>
-	</table><br>
+		<table>
+			<tr>
+				<th class="lead">Este es el tamaño del container 100%</th>
+				<p class="lead">Cual es la diferencia</p>
+			</tr>
+		</table><br>
 		<div class="row">
 
 			<div class="col-10">
 				<table> 
 					<tr>
 						<th><bold>80%</bold></th>
-					</tr> 
+					</tr>
 				</table> 
+				<p class="text-left">
+				Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left Alineacion de texto left 
+				</p>
+				<p class="text-center">
+				Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center Alineacion de texto center 
+				</p>
+				<p class="text-right">
+				Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right Alineacion de texto right 
+				</p>
+				<p class="text-justify">
+				Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify Alineacion de texto justify 
+				</p>
+				
 			</div>
 
 			<div class="col-2">
@@ -64,6 +63,135 @@
 			</div>
 
 		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="text-center lead">Lowecase / upercase / capitalize</p>
+				<p class="text-lowercase">The quick brown fox jumps over the lazy dog.</p>
+				<p class="text-uppercase">The quick brown fox jumps over the lazy dog.</p>
+				<p class="text-capitalize">The quick brown fox jumps over the lazy dog.</p>
+			</div>
+			
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="text-center lead">Text Coloring <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php">[details]</a></p>
+				<p class="text-primary">Primary: Please read the instructions carefully before proceeding.</p>
+				<p class="text-secondary">Secondary: This is featured has been removed from the latest version.</p>
+				<p class="text-success">Success: Your message has been sent successfully.</p>
+				<p class="text-info">Info: You must agree with the terms and conditions to complete the sign up process.</p>
+				<p class="text-warning">Warning: There was a problem with your network connection.</p>
+				<p class="text-danger">Danger: An error has been occurred while submitting your data.</p>
+				<p class="text-muted">Muted: This paragraph of text is grayed out.</p>
+			</div>
+			
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="text-center lead"> Styling Blockquotes</p>
+				<blockquote class="blockquote">
+				    <p class="mb-0 text-center">The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
+				    <footer class="blockquote-footer text-right">by <cite>Albert Einstein</cite></footer>
+				</blockquote>
+			</div>
+			
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="text-center lead"> Tables</p>
+				<table class="table table-striped table-dark">
+				    <thead>
+				        <tr>
+				            <th>Row</th>
+				            <th>First Name</th>
+				            <th>Last Name</th>
+				            <th>Email</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr>
+				            <td>1</td>
+				            <td>Clark</td>
+				            <td>Kent</td>
+				            <td>clarkkent@mail.com</td>
+				        </tr>
+				        <tr>
+				            <td>2</td>
+				            <td>John</td>
+				            <td>Carter</td>
+				            <td>johncarter@mail.com</td>
+				        </tr>
+				        <tr>
+				            <td>3</td>
+				            <td>Peter</td>
+				            <td>Parker</td>
+				            <td>peterparker@mail.com</td>
+				        </tr>            
+				    </tbody>
+				</table>
+			</div>
+			
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="text-center lead"> SUBJECT</p>
+				CONTENT
+			</div>
+			
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="text-center lead"> SUBJECT</p>
+				CONTENT
+			</div>
+			
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="text-center lead"> SUBJECT</p>
+				CONTENT
+			</div>
+			
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="text-center lead"> SUBJECT</p>
+				CONTENT
+			</div>
+			
+		</div>
+
+
+
+
+		<hr>
+		<footer>
+		    <div class="row">
+		        <div class="col-md-6">
+		            <p>Copyright &copy; 2020 Lonchanick</p>
+		        </div>
+		        <div class="col-md-6 text-md-right">
+		            <a href="#" class="text-dark">Terms of Use</a> 
+		            <span class="text-muted mx-2">|</span> 
+		            <a href="#" class="text-dark">Privacy Policy</a>
+		        </div>
+		    </div>
+		</footer>
 	</div>
 
 	<!-- 
